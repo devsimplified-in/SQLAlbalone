@@ -67,7 +67,15 @@
     <Build Include="Tables\tblBoard.sql" />
     <Build Include="Tables\tblPlayer.sql" />
     <Build Include="Tables\tblBoardHistory.sql" />
-    <Build Include="Tables\tblPositionPossibleMove.sql" />
-    <Build Include="Stored Procedures\uspLoadMasterData.sql" />
+    <Build Include="Tables\tblPositionMove.sql" />
+    <Build Include="Stored Procedures\uspCleanAndLoadMasterData.sql" />
+    <Build Include="Tables\tblGamePlayer.sql" />
+    <Build Include="Tables\tblGame.sql" />
+    <Build Include="Stored Procedures\uspStartNewGame.sql" />
+    <Build Include="Stored Procedures\uspRegisterPlayer.sql" />
+    <Build Include="Stored Procedures\uspRegisterGame.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SqlSchemaCompare.scmp" />
   </ItemGroup>
 </Project>

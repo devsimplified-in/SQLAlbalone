@@ -1,5 +1,5 @@
-﻿CREATE TABLE [dbo].[tblPositionPossibleMove] (
-    [ID]         INT IDENTITY (1, 1) NOT NULL,
+﻿CREATE TABLE [dbo].[tblPositionMove] (
+    [ID]         INT NOT NULL,
     [PositionID] INT NOT NULL,
     [M1]         BIT NOT NULL,
     [M2]         BIT NOT NULL,
