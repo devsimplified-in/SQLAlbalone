@@ -2,8 +2,11 @@
     [ID]         INT NOT NULL,
     [MarbleID]   INT NOT NULL,
     [PositionID] INT NOT NULL,
+    [Discard]    BIT NOT NULL,
     CONSTRAINT [PK_tblBoardHistory] PRIMARY KEY CLUSTERED ([ID] ASC)
 );
+
+
 
 
 

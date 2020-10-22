@@ -74,8 +74,10 @@
     <Build Include="Stored Procedures\uspStartNewGame.sql" />
     <Build Include="Stored Procedures\uspRegisterPlayer.sql" />
     <Build Include="Stored Procedures\uspRegisterGame.sql" />
+    <Build Include="Stored Procedures\uspCleanAndLoadMasterData2.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SqlSchemaCompare.scmp" />
+    <None Include="Albalone.Database.publish.xml" />
   </ItemGroup>
 </Project>
