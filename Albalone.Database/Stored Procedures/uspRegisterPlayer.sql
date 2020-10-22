@@ -1,7 +1,9 @@
 ﻿
 CREATE PROCEDURE [dbo].[uspRegisterPlayer]
 (
-	@PlayerName Varchar(50)
+	@PlayerName Varchar(50),
+	@PlayerID INT OUTPUT
+	
 )
 AS
 BEGIN
@@ -14,8 +16,7 @@ BEGIN
 	(
 	    @PlayerName
 	)	
-	
 
-		
+	SET @PlayerID = SCOPE_IDENTITY();
 
 END

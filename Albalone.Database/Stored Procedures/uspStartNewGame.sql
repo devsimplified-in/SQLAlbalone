@@ -55,4 +55,6 @@ BEGIN
 	SELECT	@GamePlayerID AS GamePlayerID, 27 AS MarbleID ,60  AS PositionID UNION ALL 
 	SELECT	@GamePlayerID AS GamePlayerID, 28 AS MarbleID ,61  AS PositionID 
 
+
+
 END

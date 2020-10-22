@@ -1,6 +1,7 @@
 ﻿CREATE PROCEDURE uspRegisterGame
 (
-	@Name Varchar(50)
+	@Name Varchar(50),
+	@GameID INT OUTPUT
 )
 AS
 BEGIN
@@ -10,5 +11,8 @@ BEGIN
 	    Name
 	)
 	SELECT @Name
+
+	SET @GameID = SCOPE_IDENTITY()
+
 
 END
