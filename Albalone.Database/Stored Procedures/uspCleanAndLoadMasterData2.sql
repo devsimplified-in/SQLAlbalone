@@ -87,7 +87,7 @@ SELECT	57 AS ID, 'I91' PositionCode,  9 XCordinate, 1 YCordinate UNION ALL
 SELECT	58 AS ID, 'I92' PositionCode,  9 XCordinate, 2 YCordinate UNION ALL 
 SELECT	59 AS ID, 'I93' PositionCode,  9 XCordinate, 3 YCordinate UNION ALL 
 SELECT	60 AS ID, 'I94' PositionCode,  9 XCordinate, 4 YCordinate UNION ALL 
-SELECT	61 AS ID, 'I95' PositionCode,  9 XCordinate, 5 YCordinate 
+SELECT	61 AS ID, 'I95' PositionCode,  9 XCordinate, 5 YCordinate  
 
 
 
@@ -139,7 +139,7 @@ BOTTOMRIGHT
 
 
 --SELECT	1 AS ID, 'A11' PositionCode,  1 XCordinate, 1 YCordinate 
-INSERT INTO tblPositionMove(ID,FromPositionID,ToPositionID,MoveDirection)
+INSERT INTO tblPositionMove(FromPositionID,ToPositionID,MoveDirection)
 SELECT	1 AS FromPositionID, 02 AS ToPositionID,'RIGHT' AS MoveDirection UNION ALL
 SELECT	1 AS FromPositionID, 07 AS ToPositionID,'RIGHT' AS MoveDirection UNION ALL
 SELECT	1 AS FromPositionID, 6 AS ToPositionID,'RIGHT' AS MoveDirection UNION ALL
@@ -203,7 +203,7 @@ SELECT	10 AS FromPositionID, 05 AS ToPositionID,'BOTTOM_RIGHT' AS MoveDirection 
 SELECT	11 AS FromPositionID, 18 AS ToPositionID,'TOP_RIGHT' AS MoveDirection UNION ALL
 SELECT	11 AS FromPositionID, 17 AS ToPositionID,'TOP_LEFT' AS MoveDirection UNION ALL
 SELECT	11 AS FromPositionID, 10 AS ToPositionID,'LEFT' AS MoveDirection UNION ALL
-SELECT	11 AS FromPositionID, 05 AS ToPositionID,'BOTTOM_LEFT' AS MoveDirection 
+SELECT	11 AS FromPositionID, 05 AS ToPositionID,'BOTTOM_LEFT' AS MoveDirection UNION ALL
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -305,7 +305,7 @@ SELECT	25 AS FromPositionID, 18 AS ToPositionID,'BOTTOM_RIGHT' AS MoveDirection 
 SELECT	26 AS FromPositionID, 35 AS ToPositionID,'TOP_RIGHT' AS MoveDirection UNION ALL
 SELECT	26 AS FromPositionID, 34 AS ToPositionID,'TOP_LEFT' AS MoveDirection UNION ALL
 SELECT	26 AS FromPositionID, 25 AS ToPositionID,'LEFT' AS MoveDirection UNION ALL
-SELECT	26 AS FromPositionID, 18 AS ToPositionID,'BOTTOM_LEFT' AS MoveDirection 
+SELECT	26 AS FromPositionID, 18 AS ToPositionID,'BOTTOM_LEFT' AS MoveDirection UNION ALL
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -367,7 +367,7 @@ SELECT	34 AS FromPositionID, 26 AS ToPositionID,'BOTTOM_RIGHT' AS MoveDirection 
 SELECT	35 AS FromPositionID, NULL AS ToPositionID,'RIGHT' AS MoveDirection UNION ALL
 SELECT	35 AS FromPositionID, 43 AS ToPositionID,'TOP_LEFT' AS MoveDirection UNION ALL
 SELECT	35 AS FromPositionID, 34 AS ToPositionID,'LEFT' AS MoveDirection UNION ALL
-SELECT	35 AS FromPositionID, 26 AS ToPositionID,'BOTTOM_LEFT' AS MoveDirection 
+SELECT	35 AS FromPositionID, 26 AS ToPositionID,'BOTTOM_LEFT' AS MoveDirection UNION ALL
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
